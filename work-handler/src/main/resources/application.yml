@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        worksChannel:
+          binder: rabbit
+          destination: work.exchange
+          group: testgroup
