@@ -9,3 +9,6 @@ spring:
           binder: rabbit
           destination: work.exchange
           group: testgroup
+  rabbitmq:
+    password: "rabbitmq"
+    username: "rabbitmq"
