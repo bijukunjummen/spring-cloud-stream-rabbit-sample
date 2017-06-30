@@ -6,7 +6,8 @@ Sample Spring Cloud Stream code to send and process "Work Units" with a RabbitMQ
 
 [source]
 ----
-rabbitmq-server
+cd rabbitmq
+docker-compose up -d
 ----
 
 
@@ -26,10 +27,4 @@ cd work-dispatcher
 mvn spring-boot:run
 ----
 
-
-* Create dummy work units by calling a controller endpoint:
-
-[source]
-----
-http://localhost:8080/generateWork?definition=test
-----
+And check the messages produced by dispatcher being handled on handler
