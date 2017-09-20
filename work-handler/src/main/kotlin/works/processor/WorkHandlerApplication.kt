@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class WorkHandlerFlow
+class WorkHandlerApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(WorkHandlerFlow::class.java, *args)
+    SpringApplication.run(WorkHandlerApplication::class.java, *args)
 }

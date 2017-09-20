@@ -13,13 +13,13 @@ import java.util.UUID
 class SampleWorkController {
     
     @Autowired
-    private val workUnitGateway: WorkUnitGateway? = null
+    private lateinit var workUnitGateway: WorkUnitGateway
 
     @RequestMapping("/generateWork")
     @ResponseBody
     fun generateWork(@RequestParam("definition") definition: String): WorkUnit {
         val sampleWorkUnit = WorkUnit(UUID.randomUUID().toString(), definition)
-        workUnitGateway!!.generate(sampleWorkUnit)
+        workUnitGateway.generate(sampleWorkUnit)
         return sampleWorkUnit
     }
 }

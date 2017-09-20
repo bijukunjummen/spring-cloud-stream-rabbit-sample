@@ -2,11 +2,10 @@ package works.service
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration
 
 @SpringBootApplication
-class WorkDispatcherMain
+class WorkDispatcherApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(WorkDispatcherMain::class.java, *args)
+    SpringApplication.run(WorkDispatcherApplication::class.java, *args)
 }

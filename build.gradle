@@ -48,6 +48,7 @@ subprojects {
         compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
         compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
         testCompile('org.springframework.boot:spring-boot-starter-test')
+        testCompile("org.springframework.cloud:spring-cloud-stream-test-support")
     }
 
     dependencyManagement {
