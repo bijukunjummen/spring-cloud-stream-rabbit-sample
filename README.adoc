@@ -15,7 +15,7 @@ rabbitmq-server
 [source]
 ----
 cd work-handler
-mvn spring-boot:run
+../gradlew bootRun
 ----
 
 * Start the Work Dispatcher:
@@ -23,7 +23,7 @@ mvn spring-boot:run
 [source]
 ----
 cd work-dispatcher
-mvn spring-boot:run
+../gradlew bootRun
 ----
 
 
