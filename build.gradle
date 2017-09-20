@@ -18,7 +18,6 @@ buildscript {
 subprojects {
     apply plugin: 'kotlin'
     apply plugin: 'kotlin-spring'
-    apply plugin: 'eclipse'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
